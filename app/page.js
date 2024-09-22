@@ -48,16 +48,26 @@ export default function RandomUserGenerator() {
             <strong>Email:</strong> {user.email}
           </p>
           <p className="text-gray-600">
+            <strong>Username:</strong> {user.login.username}
+          </p>
+          <p className="text-gray-600">
+            <strong>Password:</strong> {user.login.password}
+          </p>
+          <p className="text-gray-600">
+            <strong>Gender:</strong> {user.gender}
+          </p>
+          <p className="text-gray-600">
             <strong>Location:</strong> {user.location.street.number}, {user.location.street.name}
           </p>
           <p className="text-gray-600">
             <strong>Location:</strong> {user.location.city} {user.location.state} {user.location.country}
           </p>
+         
           <p className="text-gray-600">
-            <strong>Username:</strong> {user.login.username}
+            <strong>Nationality:</strong> {user.nat}
           </p>
           <p className="text-gray-600">
-            <strong>Password:</strong> {user.login.password}
+            <strong>Date:</strong> {user.dob.date}
           </p>
           <p className="text-gray-600">
             <strong>Age:</strong> {user.dob.age}
